@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Custom Template Filler</title>
+    <link href="assets/BleatBytes favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <div id="welcome">
+        <div>
+            Welcome to Custom Template Filler!
+            <br>
+            Choose one of the following options to continue:
+        </div>
+        <div id="inputsContainer">
+            <input id="fileInput" type="file" accept=".txt">
+            <label for="textInput" class="">
+                <img>
+                Drop your .txt file here...
+            </label>
+            <textarea id="textInput" placeholder="... Or paste your text here!"></textarea>
+        </div>
+        <a>How does this work?</a>
+    </div>
+    <div id="interact" style="display:none">
+        <p id="output">
+            If you see this text, then something has gone wrong...
+        </p>
+        <button id="copyOutput" type="button">Copy results to clipboard</button>
+        <button type="button" onclick="window.location.reload()">Back to homepage</button>
+    </div>
+    <script src="assets/inputHandler.js" type="text/javascript"></script>
+    <script src="assets/outputHandler.js" type="text/javascript"></script>
+</body>
